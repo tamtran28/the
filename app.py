@@ -5,7 +5,7 @@ import io
 st.set_page_config(page_title="Kiểm tra TTK In lỗi", layout="wide")
 st.title("📘 Kiểm tra TTK In hỏng & Hết dòng từ File Excel")
 
-uploaded_file = st.file_uploader("📤 Upload file Excel (như Muc18_1504_GTCG_2.xlsx)", type=["xlsx"])
+uploaded_file = st.file_uploader("📤 Upload file Excel (như Muc18_1504_GTCG.xlsx)", type=["xlsx"])
 
 if uploaded_file:
     df = pd.read_excel(uploaded_file, dtype={'ACC_NO': str})
