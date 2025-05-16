@@ -53,7 +53,7 @@ if uploaded_file:
     output = io.BytesIO()
     with pd.ExcelWriter(output, engine='openpyxl') as writer:
         df.to_excel(writer, sheet_name='Raw dữ liệu đầy đủ', index=False)
-        summary.to_excel(writer, sheet_name='Tóm tắt In lỗi', index=False)
+        summary.to_excel(writer, sheet_name='Tieu chi 1,2', index=False)
     output.seek(0)
 
     st.success("✅ Xử lý hoàn tất!")
